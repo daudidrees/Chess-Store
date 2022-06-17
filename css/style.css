@@ -125,7 +125,7 @@ body {
   }
 
   .product-title {
-    padding-bottom: 30px !important;
+    padding-bottom: 20px !important;
   }
 
   .chess-prdct {
@@ -324,6 +324,25 @@ body {
   text-decoration: none;
 }
 
+.footer-info-text ul li a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-info-text ul {
+  margin: 0;
+}
+
+.footer-info-text ul li:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+
 /* Hamburger */
 
 .hamburger {
@@ -338,54 +357,72 @@ body {
 
 /* Drop down menu */
 
-.dropbtn {
-  background-color: none;
-  color: #000;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 35px;
-  color: #000;
-  padding: 10px 0;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
+/* Fixed sidenav, full height */
+.sidenav {
+  height: auto;
+  width: 100%;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  top: 135px;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 15px 16px;
   text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
   display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid #D8D8D8;
+  outline: none;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.sidenav a:last-child {
+  border-bottom: none;
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.active {
+  background-color: #EFF0F6;
+  color: #0052B4;
+}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+  display: none;
+  background-color: #0052B4;
+  padding-left: 8px;
+}
+
+.dropdown-container > a{
+  color: #fff;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  padding-top: 10px;
+}
 
 .hidden {
   display: none;
+}
+
+.page_items-wrapper-2 {
+  opacity: 0;
+  max-width: 0;
+  max-height: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -403,6 +440,11 @@ body {
   }
 
   .footer-info-text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .footer-info-text ul li a {
     font-size: 16px;
     line-height: 20px;
   }
@@ -485,8 +527,11 @@ body {
   }
 
   .mobile-social-links {
-    display: block !important;
+    display: flex !important;
     align-self: center !important;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0 auto;
   }
 
   .desktop-social-links {
@@ -538,34 +583,26 @@ body {
 
   /* Mbl Nav */
 
-  .mbl-nav-items {
+  .mbl-page_items {
     padding: 0px 10px;
     border-bottom: 1px solid #D8D8D8
   }
 
-  .mbl-nav-items > a {
+  .mbl-page_items > a {
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
     color: #000;
   }
 
-  .nav-items-wrapper-2 {
-    margin: 0 auto;
-  }
-
-  .mbl-nav-items > a:active {
+  .mbl-page_items > a:active {
     color: #0052B4;
   }
 
-  .nav-items-wrapper-2 {
-    position: absolute;
-    background: #fff;
+  .sidenav {
     width: calc(100% - 32px);
-    margin: 0 auto;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 15px;
     border-radius: 22px;
   }
 
@@ -576,6 +613,12 @@ body {
   .mbl-nav-last-link {
     padding-bottom: 15px;
     border-bottom: none;
+  }
+
+  .page_items-wrapper-2 {
+    opacity: 1;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
@@ -651,3 +694,20 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .nav-logo-wrapper {
+    padding-left: 0 !important;
+  }
+
+  .nav-logo {
+    max-width: 130px;
+  }
+
+  .header {
+    margin-bottom: 10px !important;
+  }
+
+  .Chess-wrapper {
+    padding: 60px 0;
+  }
+}

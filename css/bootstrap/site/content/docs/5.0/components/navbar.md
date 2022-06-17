@@ -44,13 +44,13 @@ Here's an example of all the sub-components included in a responsive light-theme
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="page_item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
@@ -61,7 +61,7 @@ Here's an example of all the sub-components included in a responsive light-theme
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
@@ -146,16 +146,16 @@ Please note that you should also add the `aria-current` attribute on the active 
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Features</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
@@ -185,7 +185,7 @@ And because we use classes for our navs, you can avoid the list-based approach e
 </nav>
 {{< /example >}}
 
-You can also use dropdowns in your navbar. Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for `.nav-item` and `.nav-link` as shown below.
+You can also use dropdowns in your navbar. Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for `.page_item` and `.nav-link` as shown below.
 
 {{< example >}}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -196,16 +196,16 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Features</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="page_item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown link
           </a>
@@ -299,13 +299,13 @@ Mix and match with other components and utilities as needed.
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Features</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
       </ul>
@@ -330,16 +330,16 @@ Theming the navbar has never been easier thanks to the combination of theming cl
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">Features</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">About</a>
           </li>
         </ul>
@@ -359,16 +359,16 @@ Theming the navbar has never been easier thanks to the combination of theming cl
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">Features</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">About</a>
           </li>
         </ul>
@@ -388,16 +388,16 @@ Theming the navbar has never been easier thanks to the combination of theming cl
       </button>
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">Features</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-          <li class="nav-item">
+          <li class="page_item">
             <a class="nav-link" href="#">About</a>
           </li>
         </ul>
@@ -503,13 +503,13 @@ Here's an example navbar using `.navbar-nav-scroll` with `style="--bs-scroll-hei
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="page_item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Link
           </a>
@@ -520,7 +520,7 @@ Here's an example navbar using `.navbar-nav-scroll` with `style="--bs-scroll-hei
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
         </li>
       </ul>
@@ -554,13 +554,13 @@ With no `.navbar-brand` shown at the smallest breakpoint:
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="#">Hidden brand</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
@@ -584,13 +584,13 @@ With a brand name shown on the left and toggler on the right:
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
@@ -614,13 +614,13 @@ With a toggler on the left and brand name on the right:
     <a class="navbar-brand" href="#">Navbar</a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>

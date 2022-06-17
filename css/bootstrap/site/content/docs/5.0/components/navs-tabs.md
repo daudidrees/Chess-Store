@@ -21,16 +21,16 @@ To convey the active state to assistive technologies, use the `aria-current` att
 
 {{< example >}}
 <ul class="nav">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -59,16 +59,16 @@ Centered with `.justify-content-center`:
 
 {{< example >}}
 <ul class="nav justify-content-center">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -78,16 +78,16 @@ Right-aligned with `.justify-content-end`:
 
 {{< example >}}
 <ul class="nav justify-content-end">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -99,16 +99,16 @@ Stack your navigation by changing the flex item direction with the `.flex-column
 
 {{< example >}}
 <ul class="nav flex-column">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -131,16 +131,16 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabb
 
 {{< example >}}
 <ul class="nav nav-tabs">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -152,16 +152,16 @@ Take that same HTML, but use `.nav-pills` instead:
 
 {{< example >}}
 <ul class="nav nav-pills">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -169,26 +169,26 @@ Take that same HTML, but use `.nav-pills` instead:
 
 ### Fill and justify
 
-Force your `.nav`'s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your `.nav-item`s, use `.nav-fill`. Notice that all horizontal space is occupied, but not every nav item has the same width.
+Force your `.nav`'s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your `.page_item`s, use `.nav-fill`. Notice that all horizontal space is occupied, but not every nav item has the same width.
 
 {{< example >}}
 <ul class="nav nav-pills nav-fill">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Much longer nav link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
 {{< /example >}}
 
-When using a `<nav>`-based navigation, you can safely omit `.nav-item` as only `.nav-link` is required for styling `<a>` elements.
+When using a `<nav>`-based navigation, you can safely omit `.page_item` as only `.nav-link` is required for styling `<a>` elements.
 
 {{< example >}}
 <nav class="nav nav-pills nav-fill">
@@ -203,16 +203,16 @@ For equal-width elements, use `.nav-justified`. All horizontal space will be occ
 
 {{< example >}}
 <ul class="nav nav-pills nav-justified">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Much longer nav link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -256,10 +256,10 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
 
 {{< example >}}
 <ul class="nav nav-tabs">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item dropdown">
+  <li class="page_item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -269,10 +269,10 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -282,10 +282,10 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
 
 {{< example >}}
 <ul class="nav nav-pills">
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
-  <li class="nav-item dropdown">
+  <li class="page_item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -295,10 +295,10 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link" href="#">Link</a>
   </li>
-  <li class="nav-item">
+  <li class="page_item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
@@ -320,13 +320,13 @@ Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, 
 
 <div class="bd-example">
   <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
+    <li class="page_item" role="presentation">
       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="page_item" role="presentation">
       <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="page_item" role="presentation">
       <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
     </li>
   </ul>
@@ -345,13 +345,13 @@ Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, 
 
 ```html
 <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
   </li>
 </ul>
@@ -404,13 +404,13 @@ The tabs plugin also works with pills.
 
 <div class="bd-example">
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
+    <li class="page_item" role="presentation">
       <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="page_item" role="presentation">
       <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <li class="page_item" role="presentation">
       <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
     </li>
   </ul>
@@ -429,13 +429,13 @@ The tabs plugin also works with pills.
 
 ```html
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
   </li>
 </ul>
@@ -497,16 +497,16 @@ You can activate a tab or pill navigation without writing any JavaScript by simp
 ```html
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
   </li>
 </ul>
@@ -571,16 +571,16 @@ Activates a tab element and content container. Tab should have either a `data-bs
 
 ```html
 <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
   </li>
-  <li class="nav-item" role="presentation">
+  <li class="page_item" role="presentation">
     <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
   </li>
 </ul>

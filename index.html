@@ -31,54 +31,50 @@
         <img src="./assets/imgs/united-kingdom.svg">
       </div>
     </div>
-  </section>
-
-  <section class="nav-top-section-mobile nav-top-mobile container-fluid">
-    <div class="nav-top-mobile-content d-flex justify-content-between">
-      <div class="nav-mobile-cart d-flex align-items-center">
-        <img src="./assets/imgs/shopping-cart-mobile.svg">
-      </div>
-      <span class="top-nav-ver-line"></span>
-      <div class="nav-mobile-heading d-flex align-items-center">
-        <h1>ILS</h1>
-      </div>
-      <div class="nav-mobile-social-links d-flex align-items-center">
-        <img src="./assets/imgs/whatsapp.svg">
-        <img src="./assets/imgs/facebook.svg">
-        <img src="./assets/imgs/instagram.svg">
-      </div>
-      <span class="top-nav-ver-line"></span>
-      <div class="nav-mobile-phone d-flex align-items-center">
-        <img src="./assets/imgs/mobile-phone.svg">
+    <div class="nav-top-section-mobile nav-top-mobile container-fluid">
+      <div class="nav-top-mobile-content d-flex justify-content-between">
+        <div class="nav-mobile-cart d-flex align-items-center">
+          <img src="./assets/imgs/united-kingdom.svg">
+        </div>
+        <span class="top-nav-ver-line"></span>
+        <div class="nav-mobile-social-links d-flex align-items-center">
+          <img src="./assets/imgs/whatsapp.svg">
+          <img src="./assets/imgs/facebook.svg">
+          <img src="./assets/imgs/instagram.svg">
+        </div>
+        <span class="top-nav-ver-line"></span>
+        <div class="nav-mobile-phone d-flex align-items-center">
+          <img src="./assets/imgs/mobile-phone.svg">
+        </div>
       </div>
     </div>
   </section>
 
   <nav class="nav desktop-nav">
     <div class="container-fluid nav justify-content-between align-items-center py-2">
-      <ul class="ul flx-order-2">
-        <img class="img-fluid" src="./assets/imgs/logo.png" alt="logo">
+      <ul class="ul flx-order-2 nav-logo-wrapper">
+        <img class="img-fluid nav-logo" src="./assets/imgs/logo.png" alt="logo">
       </ul>
-      <ul class="nav nav-items-wrapper ds-none-mbl">
-        <li class="nav-item">
+      <ul class="nav page_items-wrapper ds-none-mbl">
+        <li class="page_item ">
           <a class="nav-link" href="#">Title</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Title</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Title</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Title</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Title</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Title</a>
         </li>
-        <li class="nav-item">
+        <li class="page_item">
           <a class="nav-link" href="#">Title</a>
         </li>
       </ul>
@@ -94,43 +90,47 @@
     </div>
   </nav>
 
+  <!-- page_items-wrapper-2 hidden -->
 
-  <ul class="navbar-nav nav-items-wrapper-2 hidden">
-    <li class="nav-item mbl-nav-items home-nav-link">
-      <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item mbl-nav-items">
-      <a class="nav-link" href="#">Sets</a>
-    </li>
+  <ul class="navbar-nav page_items-wrapper-2 hidden">
+    <div class="sidenav">
+      <a href="#about">Home</a>
+      <button class="dropdown-btn">Sets
+        <img class="fa-caret-down" src="./assets/imgs/arrow-down.png" alt="arrow-down">
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
 
-    <div class="dropdown mbl-nav-items">
-      <button class="dropbtn">Gear</button>
-      <div class="dropdown-content">
-        <a href="#">Chess Clocks</a>
-        <a href="#">Chess Boxes, bags and suitcases</a>
+      <button class="dropdown-btn">Gear
+        <img class="fa-caret-down" src="./assets/imgs/arrow-down.png" alt="arrow-down">
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Chess clocks</a>
+        <a href="#">Chess boxes, bags and suitcases</a>
         <a href="#">Chess books</a>
         <a href="#">Chess tables</a>
         <a href="#">Street Chess</a>
         <a href="#">Chess software</a>
         <a href="#">Chess equipment for classes, clubs and competitions</a>
       </div>
+      <button class="dropdown-btn">Specials
+        <img class="fa-caret-down" src="./assets/imgs/arrow-down.png" alt="arrow-down">
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <a href="#">Blog</a>
+      <a href="#clients">About</a>
+      <a href="#contact">Company</a>
     </div>
-    <li class="nav-item mbl-nav-items">
-      <a class="nav-link" href="#">Spacials</a>
-    </li>
-    <li class="nav-item mbl-nav-items">
-      <a class="nav-link" href="#">Blog</a>
-    </li>
-    <li class="nav-item mbl-nav-items">
-      <a class="nav-link" href="#">About </a>
-    </li>
-    <li class="nav-item mbl-nav-items mbl-nav-last-link">
-      <a class="nav-link" href="#">Company</a>
-    </li>
   </ul>
 
-
-  <header class="header container-fluid">
+  <header class="header container-fluid mb-5">
     <div class="header-content d-flex flex-column align-items-center">
       <div class="header-top-img">
         <img class="header-bg-img-top" src="./assets/imgs/star 1.svg">
@@ -279,8 +279,13 @@
         <p>+972-50-8557773</p>
       </div>
       <div class="footer-info-text d-flex align-self-end">
-        <p>אודות חברה . בקר בחנות שלנו . פרטיות . משלוח והחזרה . תנאי שימוש
-        </p>
+        <ul class="d-flex align-items-center">
+          <li><a href="#">תנאי שימוש .</a></li>
+          <li><a href="#">משלוח והחזרה .</a></li>
+          <li><a href="#">פרטיות .</a></li>
+          <li><a href="#">בקר בחנות שלנו .</a></li>
+          <li><a href="#">אודות חברה</a></li>
+        </ul>
       </div>
       <div class="footer-nav-links">
         <ul>
@@ -295,9 +300,9 @@
         <img class="footer-logo-img" src="./assets/imgs/footer-logo.svg">
       </div>
       <div class="footer-social-links mobile-social-links d-flex align-self-end">
-        <img src="./assets/imgs/instagram.svg">
-        <img src="./assets/imgs/facebook.svg">
-        <img src="./assets/imgs/whatsapp.svg">
+        <a href="#"><img src="./assets/imgs/instagram.svg"></a>
+        <a href="#"><img src="./assets/imgs/facebook.svg"></a>
+        <a href="#"><img src="./assets/imgs/whatsapp.svg"></a>
       </div>
     </div>
   </footer>
@@ -311,11 +316,26 @@
 
 <script>
   const hamburger = document.querySelector('.hamburger-btn');
-  const nav = document.querySelector('.nav-items-wrapper-2');
+  const nav = document.querySelector('.page_items-wrapper-2');
 
   hamburger.addEventListener('click', function () {
     nav.classList.toggle('hidden');
   });
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
 </script>
 
 </html>

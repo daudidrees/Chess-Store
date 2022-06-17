@@ -50,7 +50,7 @@ const CLASS_NAME_ACTIVE = 'active'
 const SELECTOR_DATA_SPY = '[data-bs-spy="scroll"]'
 const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group'
 const SELECTOR_NAV_LINKS = '.nav-link'
-const SELECTOR_NAV_ITEMS = '.nav-item'
+const SELECTOR_NAV_ITEMS = '.page_item'
 const SELECTOR_LIST_ITEMS = '.list-group-item'
 const SELECTOR_DROPDOWN = '.dropdown'
 const SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle'
@@ -246,7 +246,7 @@ class ScrollSpy extends BaseComponent {
           SelectorEngine.prev(listGroup, `${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}`)
             .forEach(item => item.classList.add(CLASS_NAME_ACTIVE))
 
-          // Handle special case when .nav-link is inside .nav-item
+          // Handle special case when .nav-link is inside .page_item
           SelectorEngine.prev(listGroup, SELECTOR_NAV_ITEMS)
             .forEach(navItem => {
               SelectorEngine.children(navItem, SELECTOR_NAV_LINKS)

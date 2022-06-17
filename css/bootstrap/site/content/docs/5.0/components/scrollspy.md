@@ -30,13 +30,13 @@ Scroll the area below the navbar and watch the active class change. The dropdown
   <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
     <a class="navbar-brand" href="#">Navbar</a>
     <ul class="nav nav-pills">
-      <li class="nav-item">
+      <li class="page_item">
         <a class="nav-link" href="#scrollspyHeading1">First</a>
       </li>
-      <li class="nav-item">
+      <li class="page_item">
         <a class="nav-link" href="#scrollspyHeading2">Second</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="page_item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
@@ -65,13 +65,13 @@ Scroll the area below the navbar and watch the active class change. The dropdown
 <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
   <a class="navbar-brand" href="#">Navbar</a>
   <ul class="nav nav-pills">
-    <li class="nav-item">
+    <li class="page_item">
       <a class="nav-link" href="#scrollspyHeading1">First</a>
     </li>
-    <li class="nav-item">
+    <li class="page_item">
       <a class="nav-link" href="#scrollspyHeading2">Second</a>
     </li>
-    <li class="nav-item dropdown">
+    <li class="page_item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>

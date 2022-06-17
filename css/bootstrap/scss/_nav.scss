@@ -62,7 +62,7 @@
   }
 
   .nav-link.active,
-  .nav-item.show .nav-link {
+  .page_item.show .nav-link {
     color: $nav-tabs-link-active-color;
     background-color: $nav-tabs-link-active-bg;
     border-color: $nav-tabs-link-active-border-color;
@@ -102,7 +102,7 @@
 
 .nav-fill {
   > .nav-link,
-  .nav-item {
+  .page_item {
     flex: 1 1 auto;
     text-align: center;
   }
@@ -110,7 +110,7 @@
 
 .nav-justified {
   > .nav-link,
-  .nav-item {
+  .page_item {
     flex-basis: 0;
     flex-grow: 1;
     text-align: center;
@@ -119,7 +119,7 @@
 
 .nav-fill,
 .nav-justified {
-  .nav-item .nav-link {
+  .page_item .nav-link {
     width: 100%; // Make sure button will grow
   }
 }
